@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "npm install",
-    "prisma": "npx prisma generate"
+    "vercel-build": "prisma generate && prisma migrate deploy",
+    "start": "node index.js",
+    "migrate:dev": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:status": "prisma migrate status",
+    "generate": "prisma generate"
   },
   "prisma": {
     "seed": "node ./prisma/seed.js"
