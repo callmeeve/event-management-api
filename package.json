@@ -5,12 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "vercel-build": "npx prisma generate && npx prisma db push --preview-feature",
-    "start": "node index.js",
-    "migrate:dev": "npx prisma migrate dev",
-    "migrate:deploy": "npx prisma migrate deploy",
-    "migrate:status": "npx prisma migrate status",
-    "generate": "npx prisma generate"
+    "start": "node index.js"
   },
   "prisma": {
     "seed": "node ./prisma/seed.js"
