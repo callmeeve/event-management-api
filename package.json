@@ -1,12 +1,13 @@
 {
-  "name": "backend",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "npm install"
   },
   "prisma": {
     "seed": "node ./prisma/seed.js"
@@ -15,7 +16,7 @@
     "node": "20.x"
   },
   "keywords": [],
-  "author": "",
+  "author": "Widi Diky",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^5.15.0",
